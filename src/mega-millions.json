@@ -1,0 +1,14 @@
+{
+  "numbers": [
+    { "regular": [5, 17, 47, 55, 61], "powerball": 8 },
+    { "regular": [7, 13, 35, 42, 44], "powerball": 17 },
+    { "regular": [23, 29, 31, 58, 63], "powerball": 4 },
+    { "regular": [5, 8, 14, 27, 65], "powerball": 21 },
+    { "regular": [10, 13, 20, 39, 43], "powerball": 9 },
+    { "regular": [17, 22, 28, 56, 66], "powerball": 23 },
+    { "regular": [7, 14, 34, 54, 68], "powerball": 5 },
+    { "regular": [19, 39, 44, 54, 60], "powerball": 10 },
+    { "regular": [6, 9, 31, 38, 58], "powerball": 20 },
+    { "regular": [22, 41, 45, 62, 69], "powerball": 16 }
+  ]
+}
