@@ -10,4 +10,4 @@ const options = yargs.usage("Usage: -n <name>").option("n", {
   demandOption: true,
 }).argv;
 
-executeEngine(options.name);
+executeEngine(options);

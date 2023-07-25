@@ -1,5 +1,5 @@
-const executeEngine = (name) => {
-  const greeting = `Hello, ${name}`;
+const executeEngine = (options) => {
+  const greeting = `Hello, ${options.name}`;
   console.log(greeting);
 };
 
