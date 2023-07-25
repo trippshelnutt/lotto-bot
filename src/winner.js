@@ -15,7 +15,7 @@ function getNumbersFromDocument(data) {
 
 function parseNumbersFromHtml(htmlNumbers) {
   return {
-    regular: [
+    balls: [
       parseInt(htmlNumbers[0].textContent),
       parseInt(htmlNumbers[1].textContent),
       parseInt(htmlNumbers[2].textContent),

@@ -3,9 +3,9 @@ const { loadMegaMillionsNumbers, loadPowerballNumbers } = require("./numbers");
 function assertResult(result) {
   expect(result.length).toBe(10);
   result.forEach((number) => {
-    expect(number.regular).not.toBeNull();
-    expect(number.regular.length).toBe(5);
-    number.regular.forEach((number) => {
+    expect(number.balls).not.toBeNull();
+    expect(number.balls.length).toBe(5);
+    number.balls.forEach((number) => {
       expect(typeof number).toBe("number");
     });
     expect(number.powerball).not.toBeNull();

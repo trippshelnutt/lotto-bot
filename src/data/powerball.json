@@ -1,14 +1,12 @@
-{
-  "numbers": [
-    { "regular": [28, 35, 42, 49, 62], "powerball": 7 },
-    { "regular": [29, 36, 39, 45, 55], "powerball": 22 },
-    { "regular": [11, 17, 46, 62, 64], "powerball": 16 },
-    { "regular": [24, 26, 28, 47, 69], "powerball": 13 },
-    { "regular": [8, 11, 13, 44, 63], "powerball": 20 },
-    { "regular": [15, 18, 43, 60, 63], "powerball": 9 },
-    { "regular": [17, 20, 35, 55, 60], "powerball": 4 },
-    { "regular": [15, 16, 26, 43, 50], "powerball": 1 },
-    { "regular": [8, 14, 22, 24, 26], "powerball": 19 },
-    { "regular": [5, 54, 61, 62, 68], "powerball": 25 }
-  ]
-}
+[
+  { "balls": [28, 35, 42, 49, 62], "powerball": 7 },
+  { "balls": [29, 36, 39, 45, 55], "powerball": 22 },
+  { "balls": [11, 17, 46, 62, 64], "powerball": 16 },
+  { "balls": [24, 26, 28, 47, 69], "powerball": 13 },
+  { "balls": [8, 11, 13, 44, 63], "powerball": 20 },
+  { "balls": [15, 18, 43, 60, 63], "powerball": 9 },
+  { "balls": [17, 20, 35, 55, 60], "powerball": 4 },
+  { "balls": [15, 16, 26, 43, 50], "powerball": 1 },
+  { "balls": [8, 14, 22, 24, 26], "powerball": 19 },
+  { "balls": [5, 54, 61, 62, 68], "powerball": 25 }
+]

@@ -4,9 +4,9 @@ const {
 } = require("./winner");
 
 function assertResult(result) {
-  expect(result.regular).not.toBeNull();
-  expect(result.regular.length).toBe(5);
-  result.regular.forEach((number) => {
+  expect(result.balls).not.toBeNull();
+  expect(result.balls.length).toBe(5);
+  result.balls.forEach((number) => {
     expect(typeof number).toBe("number");
   });
   expect(result.powerball).not.toBeNull();

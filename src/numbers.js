@@ -2,11 +2,11 @@ const megaMillionsNumbers = require("./data/mega-millions.json");
 const powerballNumbers = require("./data/powerball.json");
 
 const loadMegaMillionsNumbers = () => {
-  return megaMillionsNumbers.numbers;
+  return megaMillionsNumbers;
 };
 
 const loadPowerballNumbers = () => {
-  return powerballNumbers.numbers;
+  return powerballNumbers;
 };
 
 module.exports = { loadMegaMillionsNumbers, loadPowerballNumbers };
