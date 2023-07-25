@@ -1,5 +1,5 @@
-const megaMillionsNumbers = require("./mega-millions.json");
-const powerballNumbers = require("./powerball.json");
+const megaMillionsNumbers = require("./data/mega-millions.json");
+const powerballNumbers = require("./data/powerball.json");
 
 const loadMegaMillionsNumbers = () => {
   return megaMillionsNumbers.numbers;
