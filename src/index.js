@@ -3,11 +3,21 @@
 const yargs = require("yargs");
 const executeEngine = require("./engine");
 
-const options = yargs.usage("Usage: -n <name>").option("n", {
-  alias: "name",
-  describe: "Your name",
-  type: "string",
-  demandOption: true,
-}).argv;
+const options = yargs
+  .usage("Usage: $0 [-m] [-p]")
+  .option("m", {
+    alias: "mega-millions",
+    describe: "Check MegaMillions",
+    type: "boolean",
+  })
+  .option("p", {
+    alias: "powerball",
+    describe: "Check Powerball",
+    type: "boolean",
+  }).argv;
 
-executeEngine(options);
+if (!options.m && !options.p) {
+  yargs.showHelp("log");
+} else {
+  executeEngine(options);
+}
