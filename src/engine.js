@@ -4,7 +4,7 @@ const {
   getLatestPowerballWinner,
 } = require("./winner");
 const checkMatch = require("./match");
-const getPrize = require("./prize");
+const { getMegaMillionsPrize, getPowerballPrize } = require("./prize");
 
 // TODO: refactor to numbers.js
 function getNumberString(number) {
@@ -18,7 +18,7 @@ function getMatchString(match) {
   return `${match.powerballMatch ? "*" : ""}${match.matches}`.padStart(2, " ");
 }
 
-async function checkNumbers(gameName, getWinner, loadNumbers) {
+async function checkNumbers(gameName, getWinner, loadNumbers, getPrize) {
   console.log(`${gameName} Winner:`);
   const winner = await getWinner();
   console.log(`${getNumberString(winner)}`);
@@ -45,7 +45,8 @@ const executeEngine = async (options) => {
     await checkNumbers(
       "MegaMillions",
       getLatestMegaMillionsWinner,
-      loadMegaMillionsNumbers
+      loadMegaMillionsNumbers,
+      getMegaMillionsPrize
     );
   }
 
@@ -53,7 +54,8 @@ const executeEngine = async (options) => {
     await checkNumbers(
       "Powerball",
       getLatestPowerballWinner,
-      loadPowerballNumbers
+      loadPowerballNumbers,
+      getPowerballPrize
     );
   }
 };
